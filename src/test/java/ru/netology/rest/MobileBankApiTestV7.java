@@ -17,6 +17,6 @@ class MobileBankApiTestV7 {
                 .get("/demo/accounts")
 
                 .then()
-                .body("every {it.currency == 'RUB' || it.currency == 'USD'}", is (true));
+                .body("every {it.currency == 'RUR' || it.currency == 'USD'}", is (true));
     }
 }
